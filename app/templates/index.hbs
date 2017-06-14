@@ -4,11 +4,14 @@
 {{#each model as |product|}}
   <div class="">
       <li>
-        {{product.name}}<br>
+        {{#link-to 'product' product}}
+          {{product.name}}
+        {{/link-to}}
+        <br>
         {{product.shortDescription}}
         <img src={{product.img1}}>
-        <img src={{product.img2}}>
-        <img src={{product.img3}}>
+        <!-- <img src={{product.img2}}>
+        <img src={{product.img3}}> -->
       </li>
   </div>
 
