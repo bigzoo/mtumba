@@ -16,7 +16,7 @@ module.exports = function(environment) {
         Date: false
       }
     },
-    firebase = {
+    firebase: {
       apiKey: "AIzaSyDj0LCrn5HPH9mm-xTmgRLCsa1GnNbBX4A",
       authDomain: "mtumba-2d421.firebaseapp.com",
       databaseURL: "https://mtumba-2d421.firebaseio.com",
