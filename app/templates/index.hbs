@@ -2,7 +2,16 @@
 
 
 {{#each model as |product|}}
-  <li>{{product.name}}</li>
+  <div class="">
+      <li>
+        {{product.name}}
+        <img src={{product.img1}}>
+        <img src={{product.img2}}>
+        <img src={{product.img3}}>
+      </li>
+  </div>
+
+
 {{/each}}
 </ul>
 {{outlet}}
