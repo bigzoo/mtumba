@@ -16,6 +16,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase = {
+      apiKey: "AIzaSyDj0LCrn5HPH9mm-xTmgRLCsa1GnNbBX4A",
+      authDomain: "mtumba-2d421.firebaseapp.com",
+      databaseURL: "https://mtumba-2d421.firebaseio.com",
+      projectId: "mtumba-2d421",
+      storageBucket: "mtumba-2d421.appspot.com",
+      messagingSenderId: "351807479250"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
