@@ -7,6 +7,6 @@ export default DS.Model.extend({
   img3: DS.attr(),
   cost: DS.attr('number'),
   description: DS.attr(),
-  availableStock: DS.attr()
+  availableStock: DS.attr('number')
 
 });
