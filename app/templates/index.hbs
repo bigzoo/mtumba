@@ -1,6 +1,5 @@
+<h1>Featured Products</h1>
 <ul>
-
-
 {{#each model as |product|}}
   <div class="">
       <li>
@@ -8,9 +7,13 @@
           {{product.name}}
         {{/link-to}}
         <br>
-        {{product.cost}}
+        For Just Ksh.{{product.cost}}
+        <br>
         {{product.shortDescription}}
         <img src={{product.img1}}>
+        {{#link-to 'product' product}}
+          By This Now
+        {{/link-to}}
         <!-- <img src={{product.img2}}>
         <img src={{product.img3}}> -->
       </li>
