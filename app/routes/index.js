@@ -4,7 +4,7 @@ export default Ember.Route.extend({
   model(){
     return this.store.query('product',{
       orderBy: 'cost',
-      limitToFirst: 3
+      limitToLast: 3
     });
   }
 });
