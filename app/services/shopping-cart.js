@@ -5,5 +5,8 @@ export default Ember.Service.extend({
 
   add(item){
     this.get('items').pushObject(item);
+  },
+  pop(item){
+    this.get('items').removeObject(item);
   }
 });
