@@ -1,8 +1,10 @@
+{{display-cart}}
+<hr>
 <b>{{model.shortDescription}}</b>
 {{model.description}}
 {{model.cost}}
 <img src={{model.img1}}>
 <img src={{model.img2}}>
 <img src={{model.img3}}>
-<button class="btn btn-submit" {{actions 'addToCart'}}>Add To Cart</button>
+<button class="btn btn-submit" {{action 'addToCart' model}}>Add To Cart</button>
 {{outlet}}

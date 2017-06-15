@@ -1,1 +1,6 @@
+Your Cart!<br>
+{{#each shoppingCart.items as |item|}}
+  {{item.name}} -- {{item.cost}}<br>
+{{/each}}
+
 {{yield}}
