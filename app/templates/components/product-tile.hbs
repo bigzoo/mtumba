@@ -1,1 +1,17 @@
+<div>
+    <li>
+      {{#link-to 'product' product}}
+        {{product.name}}
+      {{/link-to}}
+      <br>
+      For Just Ksh.{{product.cost}}
+      <br>
+      {{product.shortDescription}}
+      <img src={{product.img1}}>
+      {{#link-to 'product' product}}
+        By This Now
+      {{/link-to}}
+    </li>
+</div>
+
 {{yield}}
