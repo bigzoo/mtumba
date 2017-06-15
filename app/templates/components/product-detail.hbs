@@ -1,14 +1,16 @@
-<b>{{product.shortDescription}}</b>
-{{product.description}}
-{{product.cost}}
-<img src={{product.img1}}>
-<img src={{product.img2}}>
-<img src={{product.img3}}>
+<b>{{product.shortDescription}}</b> {{product.description}} {{product.cost}}
+<img src= {{product.img1}}>
+<img src= {{product.img2}}>
+<img src= {{product.img3}}>
 {{#if outCart}}
-<button class="btn btn-submit" {{action 'addToCart' product}}>Add To Cart</button>
+  <button class="btn btn-submit" {{action 'addToCart' product}}>Add To Cart</button>
+  {{link-to "Back To Shop?" "products" class="btn btn-primary"}}
 {{/if}}
 {{#if inCart}}
-<button class="btn btn-submit" {{action 'removeFromCart' product}}>Remove From Cart</button>
+  <button class="btn btn-submit" {{action 'removeFromCart' product}}>Remove From Cart</button>
+  {{link-to "Checkout Now?" "checkout" class="btn btn-submit"}}
+  {{link-to "Continue Shopping?" "products" class="btn btn-primary"}}
 {{/if}}
+
 
 {{yield}}
